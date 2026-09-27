@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playwrite+NZ+Basic:wght@100..400&family=Sekuya&display=swap" rel="stylesheet">
+    <title>DoxiGame</title>
+    <link rel="icon" type="image/png" href="asset/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/homePage.css">
+    <link rel="stylesheet" href="CSS/scriptPage.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: "Sekuya", system-ui;
+      }
+      .top-bar-frame {
+        width: 100%;
+        height: 60px;
+        top: 0;
+        background-color: #00A1FF;
+        position: fixed;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+      .top-dropdown-btn {
+        font-size: 16px;
+        text-align: left;
+        height: 50px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #0090f0;
+        background: none;
+        color: #fff;
+        background-color: #00A0F4;
+        cursor: pointer;
+        z-index: 999;
+      }
+      .top-dropdown-btn:hover {
+        background-color: #0090f0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- top layer -->
+     <div class="top-bar-frame">
+      <img src="asset/icon.png" alt="DoxiGame Icon" tabindex="0" onclick="Page('home')"style="animation: logo 10s linear infinite; height: 100%; margin-right: 10px; position: absolute; left: 5px; cursor: pointer;">
+      <h1 tabindex="0" onclick="Page('home')" style="margin: 0; font-size: 28px; position: absolute; left: 70px; text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); cursor: pointer;">DoxiGame</h1>
+      <button class="fa-sharp fa-solid fa-bars-staggered dropdown-btn" id="dropdown-btn"></button>
+     </div>
+     <div class="top-dropdown-ui">
+       <button class="top-dropdown-btn" onclick="Page('home')"><div class="fa-solid fa-house" style="margin-right: 10px; position: absolute; right: 10px; "> HOME</div></button>
+       <button class="top-dropdown-btn" onclick="Page('script')"><div class="fa-solid fa-folder-tree" style="margin-right: 10px; position: absolute; right: 10px; "> TREE</div></button>
+       <button class="top-dropdown-btn" ><div class="fa-solid fa-book-open-reader" style="margin-right: 10px; position: absolute; right: 10px;"> DRALIBS</div></button>
+       <button class="top-dropdown-btn" id="about-dropdown-btn"><div class="fa-solid fa-info-circle" style="margin-right: 10px; position: absolute; right: 10px;"> ABOUT</div></button>
+       <button class="top-dropdown-btn" id="discord-dropdown-btn"><div class="fa-brands fa-discord" style="margin-right: 10px; position: absolute; right: 10px;"> DISCORD</div></button>
+     </div>
+     <!--<div class="start-page">
+
+     </div>-->
+
+     <div class="home-page">
+      <div class="blank-space" style=" height: 60px; background-color: #00A1FF;"></div>
+      <img src="asset/icon.png" alt="DoxiGame Icon" class="start-icon">
+      <h1 style="font-size: 44px; margin-top: 20px; text-align: center;"> DROX</h1>
+      <p class="home-page-paragraph" style="text-align: center; font-size: 20px; margin-top: 10px; font-family: serif;"></p>
+      <h2 class="subtitle">Why Drox?</h2>
+      <p class="credits-page-paragraph" style="margin-left: 3%; margin-top: 5px;text-align: left; font-size: 18px; font-family: serif; white-space: pre-line; border-top: 1px solid #000000;">
+      
+     </div>
+     <div class="script-page">
+      <div class="blank-space" style=" height: 60px; background-color: #00A1FF;"></div>
+      <div class="box-folder">
+        <div class="folder">
+          <h1 class="nFolder" tabindex="0">All Web Center 🌐</h1>
+          
+        </div>
+        <div class="folder">
+          <h1 class="nFolder" tabindex="0">Script 📄</h1>
+        </div>
+        <div class="folder">
+          <h1 class="nFolder" tabindex="0">DraLibs 📖</h1>
+          <button class="FBtn">___Click Me___</button>
+        </div>
+      </div>
+     </div>
+     <div class="dralibs-page">
+      
+     </div>
+     <script src="JS/main.js"></script>
+     <script src="JS/info.js"></script>
+  </body>
+</html>
