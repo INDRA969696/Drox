@@ -1,0 +1,68 @@
+.script-page {
+  height: auto;
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  position: absolute;
+}
+
+.box-folder {
+  position: relative;
+  left: 2%;
+  margin-top: 2.5px;
+  width: 98%;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.folder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #000;
+  font-family: serif;
+  text-align: center;
+  margin-top: -1;
+  margin-left: -1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.folder:hover,
+.folder:focus {
+  margin-left: 10px;
+  height: auto;
+}
+
+.nFolder {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 15px;
+  height: 30px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.FBtn {
+  border: none;
+  flex-shrink: 0;
+  height: 30px;
+  width: 97%;
+  margin-left: 5px;
+  border-top: 1px solid #010101;
+  border-top-left-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
